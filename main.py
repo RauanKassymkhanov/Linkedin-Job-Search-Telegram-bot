@@ -2,7 +2,6 @@ from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, filters, MessageHandler
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 import time
 from urllib.parse import quote
@@ -14,8 +13,8 @@ from selenium.webdriver.chrome.options import Options
 
 s = pyshorteners.Shortener()
 
-TOKEN: Final = '6666623950:AAEWzFoPkVdd-zwFwT7Bbb8Jfo7NLkD8Zko'
-BOT_USERNAME: Final = '@LinkedinJobScraper_bot'
+TOKEN: Final = 'Your telegram bot token'
+BOT_USERNAME: Final = '@your telegram bot username'
 
 # LinkedIn job search URL
 LINKEDIN_JOB_SEARCH_URL = 'https://www.linkedin.com/jobs/search/'
